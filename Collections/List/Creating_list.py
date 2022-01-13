@@ -42,4 +42,13 @@ print(len(new_l)) # 3
 print(new_l2) # [['Ali', 'Tom', 2022]]
 print(len(new_l2)) # 1
 
+# Example
+deger = '2020 was interesting year'
+
+F_list = [deger]
+G_list = list(deger)
+
+print(F_list) # ['2020 was interesting year']
+print(G_list) # ['2', '0', '2', '0', ' ', 'w', 'a', 's', ' ', 'i', 'n', 't', 'e', 'r', 'e', 's', 't', 'i', 'n', 'g', ' ', 'y', 'e', 'a', 'r']
+
 
