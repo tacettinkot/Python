@@ -1,0 +1,6 @@
+1) Can take iterable and string as variable 
+    Thats why list can accept tuple, dict, set, and str as variable
+
+2) Lists are ordered. How you created list, you will get same order
+
+3) 

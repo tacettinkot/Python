@@ -1,0 +1,3 @@
+Collections types are can be stored more than one variable
+They called iterable
+some collections are -List, -Tuple, -Dictionary, -set 
