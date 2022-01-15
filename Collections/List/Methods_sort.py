@@ -12,7 +12,7 @@ print(prime_numbers) # [2, 3, 5, 7, 11]
 # The syntax of the sort() method is: list.sort(key=..., reverse=...)
 # Alternatively, you can also use Python's built-in sorted() function for the same purpose.
 
-sorted(list, key=..., reverse=...)
+# sorted(list, key=..., reverse=...)
 # Note: The simplest difference between sort() and sorted() is: sort() changes the list directly 
 # and doesn't return any value, while sorted() doesn't change the list and returns the sorted list.
 
@@ -44,7 +44,7 @@ print('Sorted list:', vowels) # Sorted list: ['a', 'e', 'i', 'o', 'u']
 # list.sort(reverse=True)
 # Alternatively for sorted(), you can use the following code.
 
-sorted(list, reverse=True)
+# sorted(list, reverse=True)
 # Example 2: Sort the list in Descending order
 # vowels list
 vowels = ['e', 'a', 'u', 'o', 'i']
@@ -60,10 +60,10 @@ print('Sorted list (in Descending):', vowels) # Sorted list (in Descending): ['u
 
 #Based on the results of the key function, you can sort the given list.
 
-list.sort(key=len)
+# list.sort(key=len)
 # Alternatively for sorted:
 
-sorted(list, key=len)
+# sorted(list, key=len)
 
 # Here, len is Python's in-built function to count the length of an element.
 
@@ -117,11 +117,6 @@ print(employees, end='\n\n')
 employees.sort(key=get_salary, reverse=True)
 print(employees, end='\n\n')
 
-[{'Name': 'Alan Turing', 'age': 25, 'salary': 10000}, {'Name': 'John Hopkins', 'age': 18, 'salary': 1000}, {'Name': 'Mikhail Tal', 'age': 40, 'salary': 15000}, {'Name': 'Sharon Lin', 'age': 30, 'salary': 8000}]
-
-[{'Name': 'John Hopkins', 'age': 18, 'salary': 1000}, {'Name': 'Alan Turing', 'age': 25, 'salary': 10000}, {'Name': 'Sharon Lin', 'age': 30, 'salary': 8000}, {'Name': 'Mikhail Tal', 'age': 40, 'salary': 15000}]
-
-[{'Name': 'Mikhail Tal', 'age': 40, 'salary': 15000}, {'Name': 'Alan Turing', 'age': 25, 'salary': 10000}, {'Name': 'Sharon Lin', 'age': 30, 'salary': 8000}, {'Name': 'John Hopkins', 'age': 18, 'salary': 1000}]
 # Here, for the first case, our custom function returns the name of each employee. 
 # Since the name is a string, Python by default sorts it using the alphabetical order.
 
@@ -151,10 +146,3 @@ print(employees, end='\n\n')
 # sort by salary (Descending order)
 employees.sort(key=lambda x: x.get('salary'), reverse=True)
 print(employees, end='\n\n')
-Output
-
-[{'Name': 'Alan Turing', 'age': 25, 'salary': 10000}, {'Name': 'John Hopkins', 'age': 18, 'salary': 1000}, {'Name': 'Mikhail Tal', 'age': 40, 'salary': 15000}, {'Name': 'Sharon Lin', 'age': 30, 'salary': 8000}]
-
-[{'Name': 'John Hopkins', 'age': 18, 'salary': 1000}, {'Name': 'Alan Turing', 'age': 25, 'salary': 10000}, {'Name': 'Sharon Lin', 'age': 30, 'salary': 8000}, {'Name': 'Mikhail Tal', 'age': 40, 'salary': 15000}]
-
-[{'Name': 'Mikhail Tal', 'age': 40, 'salary': 15000}, {'Name': 'Alan Turing', 'age': 25, 'salary': 10000}, {'Name': 'Sharon Lin', 'age': 30, 'salary': 8000}, {'Name': 'John Hopkins', 'age': 18, 'salary': 1000}] 
