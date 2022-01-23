@@ -34,4 +34,3 @@ print("Second: ", list_value)
 list1 = ['physics', 'chemistry', 'maths']
 print ('Index of chemistry', list1.index('chemistry'))
 print ('Index of C#', list1.index('C#'))
-# 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
